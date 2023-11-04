@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using NUnit.Framework;
 
 namespace GithubActionsLab
@@ -31,16 +31,16 @@ namespace GithubActionsLab
         }
 
         // Implement 3 tests per operation, following a similar pattern as above
-        /*[Test]
+        [Test]
         public void Subtract_Valid()
         {
             Assert.AreEqual(3, Program.Subtract("5", "2"));
-            Assert.AreEqual(5, Program.Subtract("3", "2"));
+            Assert.AreEqual(1, Program.Subtract("3", "2"));
             Assert.AreEqual(1, Program.Subtract("8", "7"));
         }
 
         [Test]
-        public void Subtract_Valid()
+        public void Subtract_Invalid()
         {
             Assert.Throws<FormatException>(() => Program.Subtract("1", "a"));
             Assert.Throws<FormatException>(() => Program.Subtract("a", "1"));
@@ -64,7 +64,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Multiply_Valid()
+        public void Multiply_Invalid()
         {
             Assert.Throws<FormatException>(() => Program.Multiply("1", "a"));
             Assert.Throws<FormatException>(() => Program.Multiply("a", "1"));
@@ -88,7 +88,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Divide_Valid()
+        public void Divide_Invalid()
         {
             Assert.Throws<FormatException>(() => Program.Divide("1", "a"));
             Assert.Throws<FormatException>(() => Program.Divide("a", "1"));
@@ -112,7 +112,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Power_Valid()
+        public void Power_Invalid()
         {
             Assert.Throws<FormatException>(() => Program.Power("1", "a"));
             Assert.Throws<FormatException>(() => Program.Power("a", "1"));
@@ -125,6 +125,6 @@ namespace GithubActionsLab
             Assert.Throws<ArgumentNullException>(() => Program.Power("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Power(null, "1"));
             Assert.Throws<ArgumentNullException>(() => Program.Power(null, null));
-        } */
+        } 
     }
 }
